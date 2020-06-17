@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Algoritmo</title>
+</head>
+
+<body>
+	<!-- implemente un algoritmo que lea las horas y tarifa de un trabajador y retorne el sueldo bruto, descuento y sueldo neto.Sabiendo que el descuento es de 10% de sueldo bruto. -->
+
+
+	<h1>No cerrar el cuadro de dialogo</h1>
+
+	<script>
+		var horas_trabajadas, tarifa,
+			sueldo_bruto,
+			descuento, sueldo_neto, resultado;
+		//recogemos las horas trabajadas
+		horas_trabajadas = parseInt(prompt("¿ Por favor ingrese la cantidad de horas trabajadas ?"));
+		tarifa = parseInt(prompt("¿ Por favor ingrese el precio por hora a ganar ?"));
+		//realizamos las operaciones
+		sueldo_bruto = (horas_trabajadas * tarifa);
+		descuento = (sueldo_bruto * 0.1);
+		sueldo_neto = (sueldo_bruto - descuento)
+		//la variable resultado lo utilizo solo para mostrarlo en una sola respuesta
+		resultado =
+			`Su sueldo bruto es : , ${sueldo_bruto} soles  mientas que sueldo neto es :  ${sueldo_neto} soles y el descuento que se  efectuó  es  : ${descuento} soles`;
+
+		alert(resultado);
+	</script>
+
+
+</body>
+
+</html>
